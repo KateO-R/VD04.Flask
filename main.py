@@ -12,6 +12,10 @@ def base():
 def products():
     return render_template("index.html")
 
+@app.route("/blog/")
+def blog():
+    return render_template("blog.html")
+
 
 if __name__ == "__main__":
     app.run()
