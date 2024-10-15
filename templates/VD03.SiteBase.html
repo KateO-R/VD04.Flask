@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Cookies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #FFECB3; /* Светло-оранжевый фон */
+            color: #FF5722; /* Ярко-оранжевый цвет текста */
+            font-size: 36px;
+            font-family: Comic Sans MS
+        }
+        .card-img-top {
+            height: 320px;
+            object-fit: cover; /* обрезка изображения по заданной высоте */
+}
+        .accordion-button:not(.collapsed) {
+    background-color: #ffa500; /* Оставить цвет оранжевым, когда аккордеон открыт */
+    color: #ffffff;
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="text-center" style="font-size: 2.5em; font-weight: bold;">Moon Cookies</h1>
+        <nav class="text-center">
+            <ul class="nav nav-pills justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link btn btn-warning text-white" aria-current="page" href="/">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active btn btn-warning text-white" href="/products/">Online-Shop</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/about.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/contact.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/baby.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div id="about" class="section">
+    <h2 class="text-left" style="font-size: 2.5em; font-weight: bold;">About Us</h2>
+    <h3 style="color:black">Welcome to our Moon cookies store! The best sweets around the Moon, heavenly delicious.</h3>
+</div>
+<br>
+
+<div id="products" class="section">
+    <h2 class="text-left" style="font-size: 2.5em; font-weight: bold;">What we bake</h2>
+</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                Sets
+                <div class="card" style="width: 18rem;">
+                    <img src="img/sets.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Your favorite cookies for the best price!</p>
+                        <a href="#" class="btn btn-outline-warning w-100">Buy</a>
+        </div>
+    </div>
+            </div>
+            <div class="col">
+                Cakes
+                <div class="card" style="width: 18rem;">
+                    <img src="img/contact.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Classic cakes in any form and style!</p>
+                        <a href="#" class="btn btn-outline-warning w-100">Buy</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                Filled cookies
+                <div class="card" style="width: 18rem;">
+                    <img src="img/cookies.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Enjoy the fillings of any choice!</p>
+                        <a href="#" class="btn btn-outline-warning w-100">Buy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<br>
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        Cookies for coming events
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>We are ready to bake special cookies!</strong> For everyone's favorite holidays as well as for private events.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Safe ingredients
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>We use only fresh and natural ingredients for our cookies!</strong> No preservatives, artificial colors or unhealthy additives
+      </div>
+    </div>
+  </div>
+</div>
+
+    <footer id="contact" >
+        <h2 class="text-left" style="font-size: 2.5em; font-weight: bold;">Contacts</h2>
+        <h4>Address: Sweet street 10, Candyland<br> Phone: +7 (123) 456-78-90<br> Email: info@cookie-shop.com<br> Social media: Socialgramm #MoonCookies</h4>
+        <p>&copy; 2024 Moon Cookies Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
