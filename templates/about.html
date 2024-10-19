@@ -1,0 +1,43 @@
+{% extends "home.html" %}
+
+{% block title %}
+    О команде
+{% endblock %}
+
+{% block content %}
+
+<br>
+    <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+                    <div class="card h-100" style="width: 35rem; border: 1px solid black;">
+                        <img src="../static/image/SBteam.jpg" class="card-img-top" alt="..." style="width: 100%; height: 300px; object-fit: cover;">
+                        <div class="card-body">
+                            <h2 class="text-center" style="font-size: 2.5em; font-weight: bold;">О нас</h2>
+                            <p class="card-text">Мы — команда энтузиастов сноуборда, объединённая любовью к горам Урала.
+                                Наше сообщество состоит из любителей, которые стремятся исследовать величественные склоны и делиться незабываемыми впечатлениями.
+                                Каждый из нас — это часть большой семьи сноубордистов, готовых покорять новые вершины и открывать неизведанные маршруты.</p>
+                            <a href="#" class="btn" style="display: inline-block; margin: 0 auto; color: blue; background-color: lightgray; text-align: center; padding: 10px 20px; border: 1px solid blue; border-radius: 5px; text-decoration: none;">{{link}}</a>
+
+            </div>
+        </div>
+                </div>
+                <div class="col d-flex align-items-stretch">
+                    <div class="card h-100" style="width: 35rem; border: 1px solid black;">
+                        <img src="../static/image/community.jpg" class="card-img-top" alt="..." style="width: 100%; height: 300px; object-fit: cover;">
+                        <div class="card-body">
+                            <h2 class="text-center" style="font-size: 2.5em; font-weight: bold;">Чем мы занимаемся</h2>
+                            <p class="card-text">Мы организуем совместные поездки и катания, делимся опытом и учимся друг у друга.
+                                Наше комьюнити открыто для всех, кто хочет присоединиться к активным выходным на свежем воздухе. Мы проводим мероприятия, чтобы каждый мог найти себе компанию для катания, независимо от уровня подготовки.
+                                Присоединяйтесь, чтобы погрузиться в атмосферу приключений и найти новых друзей!</p>
+                            <a href="#" class="btn" style="display: inline-block; margin: 0 auto; color: blue; background-color: lightgray; text-align: center; padding: 20px 60px; border: 1px solid blue; border-radius: 5px; text-decoration: none;">{{link}}</a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+
+<br>
+{% endblock %}
