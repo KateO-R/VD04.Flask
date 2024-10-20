@@ -5,15 +5,15 @@ app = Flask(__name__)
 
 @app.route("/")
 def base():
-    context = {
-
-    }
-    return render_template("base.html")
+   return render_template("base.html")
 
 
 @app.route("/home/")
 def products():
-    return render_template("home.html")
+    context = {
+        "link": "Бронируй сейчас!"
+    }
+    return render_template("home.html", **context)
 
 @app.route("/about/")
 def blog():
